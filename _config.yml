@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title:
+title: ""
 description: "Personal Portfolio and Data Notes by Emmanuel Ocran"
 url: "https://emmanuelocran.github.io"
 baseurl: ""
@@ -58,7 +58,7 @@ plugins:
 author:
   name: Emmanuel Ocran
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Data & Analytics Professional"
+  bio: "Data Analyst"
   location: "Accra, Ghana"
   links:
     - label: "GitHub"
