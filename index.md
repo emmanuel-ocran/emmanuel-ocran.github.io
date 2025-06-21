@@ -1,22 +1,22 @@
 ---
 layout: single
+title: "Home"
 author_profile: true
 ---
 
-👋 Hi! I’m Ocran, a data and analytics professional in training with a background in finance.
+&nbsp;  
+&nbsp;
 
-I use tools like Python, SQL, Excel, Power BI, and AWS to clean, explore, and visualize data in ways that solve real-world business problems.
 
-Currently completing:
-- DataCamp’s Data Science and Analytics tracks  
-- Generation Ghana's Data Analyst Bootcamp  
-- Hands-on cloud and analytics projects in finance and operations
+I'm a data analyst with a background in finance, specializing in data visualization, cloud analytics, and insight generation.  
+I turn raw business data into clear, actionable insights using tools like Python, SQL, Power BI, and Excel.  
+With growing cloud expertise in AWS, I'm building scalable, insight-driven solutions that bridge data and business needs.  
+Currently focused on real-world projects and sharing practical lessons through my portfolio and Data Notes.
 
-📚 On this site, you’ll find:
-- ✅ Data & cloud projects  
-- ✍🏽 Insights from my learning journey (Data Notes)  
-- 📜 Certifications and skills  
-- 💡 Career growth stories
+
+&nbsp;  
+&nbsp;
+
 
 ---
 
