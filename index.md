@@ -1,6 +1,8 @@
 ---
 layout: home
 author_profile: true
+entries_layout: grid
+paginate: 2
 ---
 
 👋 Hi! I’m Ocran, a data and analytics professional in training with a background in finance.
