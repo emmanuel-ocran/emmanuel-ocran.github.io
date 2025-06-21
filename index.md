@@ -1,8 +1,6 @@
 ---
-layout: home
+layout: single
 author_profile: true
-entries_layout: grid
-paginate: 2
 ---
 
 👋 Hi! I’m Ocran, a data and analytics professional in training with a background in finance.
@@ -29,3 +27,17 @@ Currently completing:
 **Skills:** Data Cleaning, Storytelling, Dashboards
 
 📫 [Contact me](mailto:mrocran1@gmail.com) or connect via [LinkedIn](https://linkedin.com/in/emmanuel-ocran)
+
+---
+
+## 🔥 Recent Posts
+
+{% for post in site.posts limit:3 %}
+### [{{ post.title }}]({{ post.url | relative_url }})
+<small><strong>{{ post.date | date: "%B %d, %Y" }}</strong> — {{ post.reading_time }} read</small>
+
+{{ post.excerpt }}
+
+[Read more]({{ post.url | relative_url }})  
+---
+{% endfor %}
