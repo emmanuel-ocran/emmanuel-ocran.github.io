@@ -1,10 +1,9 @@
 ---
 layout: home
-title: "Emmanuel Ocran"
 author_profile: true
 ---
 
-👋 Hi! I’m Emmanuel Ocran — a data and analytics professional in training with a background in finance.
+👋 Hi! I’m Ocran, a data and analytics professional in training with a background in finance.
 
 I use tools like Python, SQL, Excel, Power BI, and AWS to clean, explore, and visualize data in ways that solve real-world business problems.
 
