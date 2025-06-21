@@ -62,8 +62,8 @@ plugins:
 author:
   name: Emmanuel Ocran
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Data & Analytics Professional Python • SQL • Power BI • AWS Sharing Projects, Insights, and Career Growth"
-  location: "Ghana"
+  bio: "Data & Analytics Professional"
+  location: "Accra, Ghana"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
