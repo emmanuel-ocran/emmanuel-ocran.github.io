@@ -7,7 +7,7 @@ main:
     url: /projects/
   - title: "Data Notes"
     url: /data-notes/
-  - title: "Tags"
-    url: /tags/
-  - title: "Resume"
-    url: /resume/
+  # - title: "Tags"
+  #   url: /tags/
+  # - title: "Resume"
+  #   url: /resume/
