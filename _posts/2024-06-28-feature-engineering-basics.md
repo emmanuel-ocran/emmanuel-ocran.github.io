@@ -13,7 +13,11 @@ author_profile: true
 read_time: true
 share: true
 ---
-<img src="/assets/images/posts/feature-engineering-intro.png" alt="Feature Engineering Introduction" style="width:100%; border-radius:8px; margin-bottom:1rem;" />
+
+<img src="/assets/images/posts/feature-engineering-intro.png" 
+     alt="Feature Engineering Introduction" 
+     style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;" />
+
 
 Behind every high-performing data model is one critical step — feature engineering. It's the process of transforming raw data into meaningful features that help machine learning models detect patterns and make accurate predictions.  
 

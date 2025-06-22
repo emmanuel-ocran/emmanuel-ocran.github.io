@@ -29,7 +29,7 @@ With a background in finance and growing expertise in cloud analytics, I design 
 </div>
 
 &nbsp;
----
+
 
 ## What I Do
 
@@ -38,7 +38,7 @@ With a background in finance and growing expertise in cloud analytics, I design 
 - Business-focused analytics in finance, operations, and education domains  
 - Interactive dashboards and performance reports for smarter decisions  
 
----
+
 
 ## Latest Projects
 
@@ -62,26 +62,33 @@ With a background in finance and growing expertise in cloud analytics, I design 
 </div>
 
 
----
+
 
 
 ## Recent Posts
 
-<div class="entries-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+<div class="entries-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
   {% for post in site.posts limit:3 %}
-  <div class="post-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
+  <div class="post-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; background-color: #fff;">
+    
     {% if post.header.image %}
-    <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 0.5rem;" />
+      <img src="{{ post.header.image | relative_url }}" 
+           alt="{{ post.title }}" 
+           style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
     {% endif %}
-    <h4 style="margin-top: 0;">
+    
+    <h4 style="margin-top: 0; font-size: 1.05rem;">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h4>
+    
     <p style="font-size: 0.85rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
+    
     <p style="font-size: 0.9rem;">{{ post.excerpt | truncate: 120 }}</p>
-    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem;">Read more →</a>
+    
+    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem; color: #007ACC;">Read more →</a>
+  
   </div>
   {% endfor %}
 
 </div>
-
