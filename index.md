@@ -34,21 +34,26 @@ With a background in finance and growing expertise in cloud analytics, I design 
 
 ## Latest Projects
 
-{% for project in site.projects limit:2 %}
-<div style="margin-bottom: 2rem;">
+<div class="grid__wrapper">
 
-  {% if project.image %}
-  <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width:100%; max-width: 600px; border-radius: 8px; margin-bottom: 0.75rem;" />
-  {% endif %}
+{% assign latest_projects = site.projects | sort: 'date' | reverse %}
+{% for project in latest_projects limit:2 %}
+  <div class="grid__item one-half">
+    <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+      {% if project.image %}
+        <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; border-radius: 6px;" />
+      {% endif %}
+      <h3 style="margin-top: 0.5rem;">
+        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+      </h3>
+      <p><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
+      <p>{{ project.description }}</p>
+    </div>
+  </div>
+{% endfor %}
 
-  ### [{{ project.title }}]({{ project.link }})
-  <small><strong>{{ project.date | date: "%B %d, %Y" }}</strong></small>
-
-  {{ project.description }}
-
-  <br>
-  <a href="{{ project.link }}" class="btn btn--light-outline">View Project</a>
 </div>
+
 
 ---
 {% endfor %}
