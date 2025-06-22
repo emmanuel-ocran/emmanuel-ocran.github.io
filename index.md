@@ -63,7 +63,6 @@ With a background in finance and growing expertise in cloud analytics, I design 
 </div>
 
 ---
-{% endfor %}
 
 
 ## Recent Posts
