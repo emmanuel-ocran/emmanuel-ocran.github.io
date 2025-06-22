@@ -6,7 +6,7 @@ classes: wide
 ---
 
 &nbsp;  
-&nbsp;
+
 
 Hi! I'm **Ocran** — an associate data scientist and analyst.
 
@@ -42,37 +42,46 @@ With a background in finance and growing expertise in cloud analytics, I design 
 
 ## Latest Projects
 
-<div class="grid__wrapper">
+<div class="entries-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
 
-{% assign latest_projects = site.projects | sort: 'date' | reverse %}
-{% for project in latest_projects limit:2 %}
-  <div class="grid__item one-half">
-    <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+  {% assign latest_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in latest_projects limit:2 %}
+    <div class="project-card" style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; background: #fff;">
       {% if project.image %}
-        <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; border-radius: 6px;" />
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 0.5rem;" />
       {% endif %}
-      <h3 style="margin-top: 0.5rem;">
+      <h3 style="margin-top: 0;">
         <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
       </h3>
-      <p><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
-      <p>{{ project.description }}</p>
+      <p style="font-size: 0.9rem; color: #666;"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
+      <p style="font-size: 0.95rem;">{{ project.description | truncate: 140 }}</p>
+      <a href="{{ project.link }}" target="_blank" style="font-size: 0.9rem;">View project →</a>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
 
 </div>
+
 
 ---
 
 
 ## Recent Posts
 
-{% for post in site.posts limit:3 %}
-### [{{ post.title }}]({{ post.url | relative_url }})
-<small><strong>{{ post.date | date: "%B %d, %Y" }}</strong> — {{ post.reading_time }} read</small>
+<div class="entries-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
 
-{{ post.excerpt }}
+  {% for post in site.posts limit:3 %}
+  <div class="post-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
+    {% if post.header.image %}
+    <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 0.5rem;" />
+    {% endif %}
+    <h4 style="margin-top: 0;">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h4>
+    <p style="font-size: 0.85rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p style="font-size: 0.9rem;">{{ post.excerpt | truncate: 120 }}</p>
+    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem;">Read more →</a>
+  </div>
+  {% endfor %}
 
-[Read more]({{ post.url | relative_url }})  
----
-{% endfor %}
+</div>
+
