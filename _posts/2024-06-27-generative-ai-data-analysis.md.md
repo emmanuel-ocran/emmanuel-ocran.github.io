@@ -9,9 +9,11 @@ tags:
   - data analysis
   - data tools
   - ai assistant
-header:
-  image: /assets/images/posts/genai-data-analysis.png
+author_profile: true
+read_time: true
+share: true
 ---
+<img src="/assets/images/posts/genai-data-analysis.png" alt="Generative AI and Data Analysis" style="width:100%; border-radius:8px; margin-bottom:1rem;" />
 
 Generative AI (GenAI) is reshaping the way data professionals work. While it's often associated with content and code generation, its potential in automating data analysis workflows is growing rapidly.  
 

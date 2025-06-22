@@ -4,13 +4,8 @@ title: "Data Notes"
 permalink: /data-notes/
 entries_layout: list
 author_profile: true
-header:
-  image: /assets/images/banners/data-notes-cover.png
-  caption: "Insights on data, cloud, and analytics careers"
-  overlay_color: "#000"
-  overlay_filter: "0.3"
-  
 ---
+<img src="/assets/images/banners/data-notes-cover.png" alt="Data Notes Cover" style="width:100%; border-radius:8px; margin-bottom:1rem;" />
 
 **Data Notes** is a weekly blog delivering clear, concise insights on data analysis, cloud tools, and career development.  
 

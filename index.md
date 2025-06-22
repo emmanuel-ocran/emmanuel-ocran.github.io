@@ -2,6 +2,7 @@
 layout: single
 title: ""
 author_profile: true
+classes: wide
 ---
 
 &nbsp;  
@@ -14,13 +15,20 @@ I help businesses and nonprofits make smarter decisions by transforming complex 
 With a background in finance and growing expertise in cloud analytics, I design scalable solutions that simplify reporting, uncover trends, and drive measurable impact.
 
 <div style="margin-top: 1rem;">
-  <a href="https://drive.google.com/file/d/1DUUEciicVQzL8aN42of_AV_uRFBhouDO/view?usp=sharing" class="btn btn--primary">View My Resume</a>
-  <a href="/about" class="btn btn--light-outline" style="margin-left: 10px;">Learn More About Me</a>
+  <a href="https://drive.google.com/file/d/1DUUEciicVQzL8aN42of_AV_uRFBhouDO/view?usp=sharing"
+     class="btn btn--primary"
+     target="_blank" rel="noopener">
+     View My Resume
+  </a>
+  <a href="/about"
+     class="btn btn--secondary"
+     style="margin-left: 15px;"
+     target="_blank" rel="noopener">
+     Learn More About Me
+  </a>
 </div>
 
-&nbsp;  
 &nbsp;
-
 ---
 
 ## What I Do
@@ -53,7 +61,6 @@ With a background in finance and growing expertise in cloud analytics, I design 
 {% endfor %}
 
 </div>
-
 
 ---
 {% endfor %}

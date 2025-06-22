@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ""
-logo: "/assets/images/eocran-logo.jpg"
+title: "<img src='/assets/images/eocran-logo.jpg' alt='Ocran logo' style='height: 32px; vertical-align: middle;' />"
+#logo: /assets/images/eocran-logo.jpg
 description: "Portfolio and Practical Insights on Data, Cloud, and Analytics by Emmanuel Ocran"
-url: "https://emmanuelocran.github.io"
+url: "https://emmanuel-ocran.github.io"
 baseurl: ""
 twitter_username: username
 github_username: emmanuel-ocran
@@ -52,13 +52,6 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Back to top link
-back_to_top: true
-back_to_top_text: "Back to top"
-
-# Wide layout
-layout: single
-classes: wide
 
 # Plugins (previously gems:)
 plugins:
@@ -119,6 +112,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
 
 category_archive:
   type: liquid
