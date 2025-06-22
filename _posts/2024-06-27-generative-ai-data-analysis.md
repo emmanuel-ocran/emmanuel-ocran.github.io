@@ -13,16 +13,15 @@ author_profile: true
 read_time: true
 share: true
 ---
-
+<img src="/assets/images/posts/genai-data-analysis.png" 
+     alt="Generative AI and Data Analysis" 
+     style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;" />
 
 Generative AI (GenAI) is reshaping the way data professionals work. While it's often associated with content and code generation, its potential in automating data analysis workflows is growing rapidly.  
 
 From data exploration to insight delivery, GenAI tools are helping analysts work faster, smarter, and with greater flexibility.
 
 <!--more-->
-<img src="/assets/images/posts/genai-data-analysis.png" 
-     alt="Generative AI and Data Analysis" 
-     style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;" />
 
 ## Automating Exploration and Reporting
 

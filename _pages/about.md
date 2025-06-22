@@ -5,78 +5,14 @@ layout: single
 author_profile: true
 ---
 
-## 👋 Hi, I’m Emmanuel Ocran
+Hi, I’m **Emmanuel Ocran** — a data analyst with a background in finance and growing expertise in cloud analytics, data storytelling, and business insight.
 
-I’m a data analyst with a background in finance, specializing in data storytelling, cloud analytics, and digital transformation. I turn raw data into actionable insights that help teams make smarter decisions.
+I’ve always been fascinated by how numbers tell stories. This passion led me to study finance, where I discovered the power of data to drive meaningful decisions. While completing my BCom in Finance, I took courses in *Computer Applications in Finance* and *Financial Modeling*, where I used **Python** to analyze financial data and forecast stock prices — laying the foundation for my transition into data.
 
----
+Since then, I’ve immersed myself in the world of data science and analytics, learning to transform raw data into insights that businesses and nonprofits can use to solve real problems. I work with tools like **Python**, **SQL**, **Excel**, and **Power BI**, and I’m **AWS Certified** — applying cloud services like **S3**, **Athena**, and **Lambda** to streamline data workflows and reporting.
 
-## 🧩 What I Do
+Outside of analysis, I’ve also worked as a freelance **WordPress developer**, building digital platforms for mission-driven organizations. This experience sharpened my user-centered thinking and technical versatility.
 
-- Analyze and visualize data using **Python, SQL, Excel, and Power BI**
-- Build automated reports and dashboards to track KPIs
-- Explore cloud tools (AWS) for scalable data solutions
-- Apply analytical thinking to finance, education, and nonprofit sectors
+Right now, I’m building hands-on projects in **operations**, **finance**, and **education** — combining data visualization, cloud integration, and strong communication to deliver value. I document my learning through **Data Notes**, a blog where I share practical lessons, tools, and career reflections for aspiring data professionals.
 
----
-
-## 🧠 My Background
-
-I started my journey in finance, earning a Bachelor of Commerce (BCom) degree. While studying financial modeling and applied computing, I developed a passion for using data to solve business problems.
-
-Since then, I’ve completed a data analyst bootcamp, a cloud skills training program (AWS Certified), and I’m actively building real-world projects focused on social impact and business intelligence.
-
----
-
-## 🛠️ Skills & Tools
-
-- **Languages:** Python, SQL
-- **Libraries:** pandas, seaborn, matplotlib, scikit-learn
-- **Visualization:** Power BI, Excel, Tableau (basic)
-- **Cloud:** AWS (S3, Lambda, Athena)
-- **Other:** Git/GitHub, Linux, Jupyter, Google Sheets
-
-> 📁 [See full toolset](/stack)
-
----
-
-## 🧾 Certifications
-
-- AWS Certified Cloud Practitioner – 2024  
-- Scrimba AI Engineering Specialization – 2024  
-- IBM DevOps and Software Engineering – 2023  
-- Responsive Web Design (freeCodeCamp) – 2024
-
-> 🎓 [View all certifications](/certifications)
-
----
-
-## 🧪 Projects & Experience
-
-I’ve worked on analytics projects that explore education outcomes, media performance, and mental health data. I’m also the founder of **Data Notes**, where I share weekly insights for aspiring data professionals.
-
-> 📊 [See my portfolio](/projects)
-
----
-
-## 📄 Resume
-
-A full overview of my experience, education, and credentials is available on my résumé.
-
-> 🔗 [Download my resume (PDF)](https://drive.google.com/your-resume-link)
-
----
-
-### 🧠 Tips for Structure
-
-| Section | Keep on `about.md`? | Move to page? | Page suggestion |
-|--------|----------------------|----------------|----------------|
-| Intro + Value Proposition | ✅ Yes | – | – |
-| Skills Summary | ✅ Brief list | ✅ Yes (detailed) | `/stack` |
-| Certifications | ✅ Short list | ✅ Yes (cert list) | `/certifications` |
-| Full Resume | ✅ Link only | ✅ Yes | `/resume` |
-| All Projects | ✅ Link only | ✅ Yes | `/projects` |
-
----
-
-Would you like a full Markdown draft of this `about.md` file or help creating the linked pages (`/stack`, `/certifications`, etc.)?
+When I’m not coding or building dashboards, I enjoy **peer discussion**, **technical writing**, and exploring how **AI/ML** can improve financial systems and social outcomes.
