@@ -5,22 +5,25 @@ permalink: /projects/
 author_profile: true
 ---
 
-Here’s a collection of my analytics and cloud projects — from dashboards to end-to-end data pipelines.
+Explore a selection of projects where I apply data analysis, visualization, and cloud-powered insights to solve real-world problems.
 
-<div class="grid__wrapper">
+---
 
-{% include archive-single.html
-  title="Excel Coffee Sales Dashboard"
-  excerpt="Built a dynamic dashboard with PivotTables, slicers, and formulas to analyze coffee sales."
-  url="https://github.com/emmanuel-ocran/excel-coffee-sales"
-  image_path="/assets/images/coffee-dashboard.png"
-%}
+{% for project in site.projects %}
+<div style="margin-bottom: 2rem;">
 
-{% include archive-single.html
-  title="NYC School Performance"
-  excerpt="Used Python and pandas to analyze public school test scores in NYC."
-  url="#"
-  image_path="/assets/images/nyc-school.png"
-%}
+  {% if project.image %}
+  <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width:100%; max-width: 720px; border-radius: 8px; margin-bottom: 0.75rem;" />
+  {% endif %}
 
+  ### [{{ project.title }}]({{ project.link }})
+  <small><strong>{{ project.date | date: "%B %d, %Y" }}</strong></small>
+
+  {{ project.description }}
+
+  <br>
+  <a href="{{ project.link }}" class="btn btn--primary">View Project</a>
 </div>
+
+---
+{% endfor %}

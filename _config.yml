@@ -14,13 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ""
-description: "Personal Portfolio and Data Notes by Emmanuel Ocran"
+logo: "/assets/images/eocran-logo.jpg"
+description: "Portfolio and Practical Insights on Data, Cloud, and Analytics by Emmanuel Ocran"
 url: "https://emmanuelocran.github.io"
 baseurl: ""
 twitter_username: username
-github_username: username
+github_username: emmanuel-ocran
 minimal_mistakes_skin: default
 search: true
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # Build settings
 markdown: kramdown
@@ -46,6 +52,14 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Wide layout
+layout: single
+classes: wide
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -58,7 +72,7 @@ plugins:
 author:
   name: Emmanuel Ocran
   avatar: "/assets/images/eocran-img.jpg"
-  bio: "Data Analyst"
+  bio: "Insight-driven analyst with cloud expertise"
   location: "Accra, Ghana"
   links:
     - label: "GitHub"

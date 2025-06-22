@@ -1,45 +1,82 @@
 ---
-layout: single
-title: "About Me"
+title: "About"
 permalink: /about/
+layout: single
 author_profile: true
 ---
 
-Hi, I’m **Emmanuel Ocran** — a data and analytics professional with a background in finance and a growing specialization in cloud technologies and AI/ML.
+## 👋 Hi, I’m Emmanuel Ocran
 
-I help teams and organizations turn raw data into insight-driven decisions using tools like **Python, SQL, Excel, Power BI**, and **AWS**. Whether it's building dashboards, cleaning messy datasets, or automating workflows in the cloud, I enjoy solving problems that matter.
-
----
-
-### 🎯 What I Do
-
-- **Data Analysis & Storytelling:** I explore, visualize, and communicate data clearly to uncover trends and drive smarter decisions.
-- **Cloud & Analytics Engineering:** I'm building cloud-integrated data solutions using AWS services like S3, Lambda, and Athena.
-- **Project-based Learning:** I document real projects in finance, education, and operations — shared through GitHub and my blog.
-- **Technical Writing & Mentorship:** I run *Data Notes*, a newsletter and blog where I break down analytics concepts and career lessons for aspiring data professionals.
+I’m a data analyst with a background in finance, specializing in data storytelling, cloud analytics, and digital transformation. I turn raw data into actionable insights that help teams make smarter decisions.
 
 ---
 
-### 🛠️ Tech Stack
+## 🧩 What I Do
 
-- **Languages:** Python, SQL  
-- **Analytics Tools:** Excel, Power BI, Jupyter Notebook  
-- **Cloud & Dev:** AWS (S3, Lambda, IAM), GitHub, VS Code, Linux  
-- **Core Skills:** Data Cleaning, Visualization, Dashboarding, Querying, Communication
-
----
-
-### 🚀 Current Focus
-
-- Completing the **DataCamp tracks** in Data Science, Analytics, and Engineering  
-- Working on capstone-ready projects using real-world datasets  
-- Growing into a **Data Science & Analytics Engineer** with strong cloud integration  
-- Sharing my growth publicly on [LinkedIn](https://linkedin.com/in/emmanuel-ocran), [GitHub](https://github.com/emmanuel-ocran), and *Data Notes*
+- Analyze and visualize data using **Python, SQL, Excel, and Power BI**
+- Build automated reports and dashboards to track KPIs
+- Explore cloud tools (AWS) for scalable data solutions
+- Apply analytical thinking to finance, education, and nonprofit sectors
 
 ---
 
-### 🤝 Let’s Connect
+## 🧠 My Background
 
-If you’re a recruiter, collaborator, or fellow learner in the data space — I’d love to connect.  
-You can find me on [LinkedIn](https://linkedin.com/in/emmanuel-ocran), [Medium](https://medium.com/@emmanuel-ocran), or email me directly at [mrocran1@gmail.com](mailto:mrocran1@gmail.com).
+I started my journey in finance, earning a Bachelor of Commerce (BCom) degree. While studying financial modeling and applied computing, I developed a passion for using data to solve business problems.
 
+Since then, I’ve completed a data analyst bootcamp, a cloud skills training program (AWS Certified), and I’m actively building real-world projects focused on social impact and business intelligence.
+
+---
+
+## 🛠️ Skills & Tools
+
+- **Languages:** Python, SQL
+- **Libraries:** pandas, seaborn, matplotlib, scikit-learn
+- **Visualization:** Power BI, Excel, Tableau (basic)
+- **Cloud:** AWS (S3, Lambda, Athena)
+- **Other:** Git/GitHub, Linux, Jupyter, Google Sheets
+
+> 📁 [See full toolset](/stack)
+
+---
+
+## 🧾 Certifications
+
+- AWS Certified Cloud Practitioner – 2024  
+- Scrimba AI Engineering Specialization – 2024  
+- IBM DevOps and Software Engineering – 2023  
+- Responsive Web Design (freeCodeCamp) – 2024
+
+> 🎓 [View all certifications](/certifications)
+
+---
+
+## 🧪 Projects & Experience
+
+I’ve worked on analytics projects that explore education outcomes, media performance, and mental health data. I’m also the founder of **Data Notes**, where I share weekly insights for aspiring data professionals.
+
+> 📊 [See my portfolio](/projects)
+
+---
+
+## 📄 Resume
+
+A full overview of my experience, education, and credentials is available on my résumé.
+
+> 🔗 [Download my resume (PDF)](https://drive.google.com/your-resume-link)
+
+---
+
+### 🧠 Tips for Structure
+
+| Section | Keep on `about.md`? | Move to page? | Page suggestion |
+|--------|----------------------|----------------|----------------|
+| Intro + Value Proposition | ✅ Yes | – | – |
+| Skills Summary | ✅ Brief list | ✅ Yes (detailed) | `/stack` |
+| Certifications | ✅ Short list | ✅ Yes (cert list) | `/certifications` |
+| Full Resume | ✅ Link only | ✅ Yes | `/resume` |
+| All Projects | ✅ Link only | ✅ Yes | `/projects` |
+
+---
+
+Would you like a full Markdown draft of this `about.md` file or help creating the linked pages (`/stack`, `/certifications`, etc.)?
