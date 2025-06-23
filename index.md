@@ -8,7 +8,7 @@ classes: wide
 <!-- Hero Section -->
 &nbsp;
 
-Hi! I'm **Ocran** — an associate data scientist and analyst.
+Hi! I'm **Emmanuel Ocran** — associate data scientist and analyst.
 
 I help businesses and nonprofits make smarter decisions by transforming complex data into clear, actionable insights.
 
@@ -69,6 +69,13 @@ A snapshot of the projects I've been working on
       </h3>
       <p style="font-size: 0.85rem; color: #666;"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
       <p style="font-size: 0.9rem;">{{ project.description | truncatewords: 24 }}</p>
+      {% if project.skills %}
+        <div class="tag-list">
+          {% for skill in project.skills %}
+            <span class="tag">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
       <a href="{{ project.link }}" target="_blank" style="font-size: 0.85rem; color: #007ACC;">View project →</a>
     </div>
   {% endfor %}
@@ -103,6 +110,14 @@ My latest thoughts and insights
         <p style="font-size: 0.9rem;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
       {% endif %}
 
+      {% if post.tags %}
+        <div class="tag-list">
+          {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem; color: #007ACC;">Read more →</a>
     </article>
   {% endfor %}
@@ -113,6 +128,7 @@ My latest thoughts and insights
   <a href="/notes" class="btn btn--primary">View All My Writings</a>
 </div>
 
+<!-- Styles -->
 <style>
   .card-hover {
     border: 1px solid #ddd;
@@ -125,6 +141,20 @@ My latest thoughts and insights
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .tag-list {
+    margin: 0.5rem 0;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.15rem;
+    color: #333;
   }
 
   .service-card {
