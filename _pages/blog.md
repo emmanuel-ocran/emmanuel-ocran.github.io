@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: ""
 permalink: /blog/
 entries_layout: list
