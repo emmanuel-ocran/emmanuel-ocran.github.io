@@ -6,8 +6,6 @@ categories:
   - Blog
 header:
   image: /assets/images/posts/genai-data-analysis.png
-  hidden: true
-teaser: /assets/images/posts/feature-engineering-intro.png
 author_profile: true
 read_time: true
 share: true
