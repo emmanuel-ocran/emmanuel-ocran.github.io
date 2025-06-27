@@ -4,8 +4,7 @@ date: 2024-06-27T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
-header:
-  image: /assets/images/posts/genai-data-analysis.png
+teaser: /assets/images/posts/genai-data-analysis.png
 author_profile: true
 read_time: true
 share: true

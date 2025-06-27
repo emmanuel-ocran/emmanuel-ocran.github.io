@@ -4,8 +4,7 @@ date: 2024-06-29T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
-header:
-  image: /assets/images/posts/ngo-impact-banner.png
+teaser: /assets/images/posts/ngo-impact-banner.png
 author_profile: true
 read_time: true
 share: true

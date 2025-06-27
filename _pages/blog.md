@@ -24,8 +24,8 @@ Looking for weekly curated insights instead?
 
 {% for post in site.posts %}
 <div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
-  {% if post.header.image %}
-    <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
+  {% if post.teaser %}
+    <img src="{{ post.teaser  | relative_url }}" alt="{{ post.title }}" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
   {% else %}
     <img src="/assets/images/default-thumbnail.png" alt="Post image" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
   {% endif %}

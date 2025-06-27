@@ -103,8 +103,8 @@ Short reads on data, analytics, and cloud — written for clarity, insight, and 
 
   {% for post in site.posts limit:3 %}
     <article class="card-hover">
-      {% if post.header.image %}
-        <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
+      {% if post.teaser %}
+        <img src="{{ post.teaser | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
       {% else %}
         <img src="/assets/images/default-thumbnail.png" alt="Default" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
       {% endif %}
