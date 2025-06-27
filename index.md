@@ -167,11 +167,6 @@ Short reads on data, analytics, and cloud — written for clarity, insight, and 
     align-items: center;
   }
 
-  i {
-    width: 30px;
-    height: 30px
-  }
-
   @media screen and (max-width: 768px) {
     .service-card {
       flex: 1 1 100%;
