@@ -31,22 +31,34 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; margin-top: 1rem;">
 
   <div class="service-card">
-    <h4 class="service-title"><i class="fas fa-chart-line service-icon"></i> Data Analysis & Visualization</h4>
+    <div class="service-icon-wrapper">
+      <i class="fas fa-chart-line"></i>
+    </div>
+    <h4 class="service-title">Data Analysis & Visualization</h4>
     <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
   </div>
 
   <div class="service-card">
-    <h4 class="service-title"><i class="fas fa-cloud service-icon"></i> Cloud Data Workflows</h4>
+    <div class="service-icon-wrapper">
+      <i class="fas fa-cloud"></i>
+    </div>
+    <h4 class="service-title">Cloud Data Workflows</h4>
     <p>Build automated pipelines with AWS (S3, Athena, Lambda) for scalable, cloud-native data reporting.</p>
   </div>
 
   <div class="service-card">
-    <h4 class="service-title"><i class="fas fa-briefcase service-icon"></i> Business-Focused Analytics</h4>
-    <p>Deliver end-to-end analytics solutions aligned with goals in finance, education, and social impact domains.</p>
+    <div class="service-icon-wrapper">
+      <i class="fas fa-briefcase"></i>
+    </div>
+    <h4 class="service-title">Business-Focused Analytics</h4>
+    <p>Deliver end-to-end analytics solutions aligned with goals in finance, education, and development sectors.</p>
   </div>
 
   <div class="service-card">
-    <h4 class="service-title"><i class="fas fa-tachometer-alt service-icon"></i> Dashboards & Reporting</h4>
+    <div class="service-icon-wrapper">
+      <i class="fas fa-tachometer-alt"></i>
+    </div>
+    <h4 class="service-title">Dashboards & Reporting</h4>
     <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
   </div>
 
