@@ -4,18 +4,13 @@ date: 2024-06-29T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
-tags:
-  - nonprofit analytics
-  - data for good
-  - impact measurement
-  - ngo data
+header:
+  image: /assets/images/posts/ngo-impact-banner.png
 author_profile: true
 read_time: true
 share: true
+classes: wide
 ---
-<img src="/assets/images/posts/ngo-impact-banner.png" 
-     alt="NGO Data Impact" 
-     style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;" />
 
 Data isn't just for big companies. NGOs and nonprofits can also use data to improve programs, report to funders, and serve communities more effectively.  
 
