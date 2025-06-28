@@ -7,25 +7,29 @@ author_profile: true
 
 Explore practical, hands-on projects showcasing my work in data analytics, cloud, and web development.
 
-<ul class="project-list" style="list-style: none; padding: 0; margin-top: 2rem;">
+<ul class="project-cards" style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
   {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
-    <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5;">
-      <h3 style="margin-bottom: 0.25rem; font-size: 1.25rem;">
-        <a href="{{ project.link }}" target="_blank" style="text-decoration: none; color: #007ACC;">{{ project.title }}</a>
+  <li style="border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; transition: transform 0.2s ease;">
+    {% if project.image %}
+    <div style="width: 100%; overflow: hidden;">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: 180px; object-fit: cover;" />
+    </div>
+    {% endif %}
+
+    <div style="padding: 1rem; flex-grow: 1; display: flex; flex-direction: column;">
+      <h3 style="margin: 0 0 0.5rem;">
+        <a href="{{ project.link }}" target="_blank" style="color: #007ACC; text-decoration: none;">{{ project.title }}</a>
       </h3>
-      <p style="margin: 0; font-size: 0.85rem; color: #666;">
-        {{ project.date | date: "%B %d, %Y" }}
-        {% if project.skills %}
-          &nbsp;|&nbsp;
-          <span style="color: #888;">Skills:</span>
-          <span style="color: #444;">{{ project.skills | join: ', ' }}</span>
-        {% endif %}
+
+      <p style="font-size: 0.9rem; color: #555;">{{ project.description | truncatewords: 25 }}</p>
+
+      <p style="margin-top: auto;">
+        <a href="{{ project.link }}" target="_blank" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: #007ACC;">View project →</a>
       </p>
-      <p style="margin-top: 0.75rem;">{{ project.description }}</p>
-      <p>
-        <a href="{{ project.link }}" target="_blank" style="font-size: 0.85rem; color: #007ACC;">View project →</a>
-      </p>
-    </li>
+    </div>
+  </li>
   {% endfor %}
+
 </ul>
