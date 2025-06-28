@@ -3,11 +3,12 @@ main:
     url: /
   - title: "About"
     url: /about/
+  - title: "Experience"
+    url: /experience/
   - title: "Portfolio"
     url: /projects/
   - title: "Writings"
     url: /blog/
-  # - title: "Tags"
-  #   url: /tags/
+
   # - title: "Resume"
   #   url: /resume/

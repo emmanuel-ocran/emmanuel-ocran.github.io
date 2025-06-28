@@ -1,6 +1,6 @@
 ---
 title: "The Role of Generative AI in Modern Data Workflows"
-date: 2024-06-27T08:00:00+00:00
+date: 2025-06-25T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Article

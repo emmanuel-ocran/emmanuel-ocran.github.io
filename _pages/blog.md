@@ -14,14 +14,13 @@ description: "Personal blog by Emmanuel Ocran — sharing practical insights on 
 
 **Welcome to my blog**
 
-
+A space where I explore data, cloud, and emerging technologies—featuring articles, tutorials, case studies, and project insights.
 
 Looking for weekly curated insights instead?  
 👉 [Subscribe to the Data Notes Newsletter](https://www.linkedin.com/newsletters/data-notes-1234567890)
 
 
 ## Recent Writings and Learnings:
----
 
 {% for post in site.posts %}
 <div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">

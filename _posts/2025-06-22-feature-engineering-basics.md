@@ -1,6 +1,6 @@
 ---
 title: "Feature Engineering: Smarter Models Begin with Better Features"
-date: 2024-06-28T08:00:00+00:00
+date: 2025-06-22T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Article
@@ -13,7 +13,7 @@ classes: wide
 ---
 
 <img src="/assets/images/posts/feature-engineering-intro.png" 
-     alt="Making NGOs Impact Visible" 
+     alt="Smarter models begin with better features" 
      style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;" />
 
 

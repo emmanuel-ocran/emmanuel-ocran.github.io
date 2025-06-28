@@ -1,15 +1,9 @@
 ---
 title: "Making Impact Visible: How NGOs Can Use Data and Analytics to Demonstrate Their Value"
-date: 2024-07-01T08:00:00+00:00
+date: 2025-06-27T08:00:00+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Article
-tags:
-  - nonprofit analytics
-  - impact measurement
-  - ngo data
-  - data for good
-  - M&E
 author_profile: true
 read_time: true
 share: true
