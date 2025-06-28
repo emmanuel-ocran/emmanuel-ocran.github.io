@@ -111,7 +111,6 @@ Short reads on data, analytics, and cloud — written for clarity, insight, and 
     <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="color: #007ACC;">{{ post.title }}</a></h3>
     <p style="margin: 0.2rem 0; color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
     <p style="margin: 0; font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem;">Read more →</a>
   </div>
 </div>
 {% endfor %}
