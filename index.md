@@ -99,31 +99,23 @@ Real-world projects designed to demonstrate data skills, business understanding,
 
 Short reads on data, analytics, and cloud — written for clarity, insight, and real-world relevance.
 
-<div class="entries-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+{% for post in site.posts %}
+<div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
+  {% if post.teaser %}
+    <img src="{{ post.teaser  | relative_url }}" alt="{{ post.title }}" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
+  {% else %}
+    <img src="/assets/images/default-thumbnail.png" alt="Post image" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
+  {% endif %}
 
-  {% for post in site.posts limit:3 %}
-    <article class="card-hover">
-      {% if post.teaser %}
-        <img src="{{ post.teaser | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
-      {% else %}
-        <img src="/assets/images/default-thumbnail.png" alt="Default" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" />
-      {% endif %}
-
-      <h4 style="margin-top: 0; font-size: 1.05rem;">
-        <a href="{{ post.url | relative_url }}" style="color: #222; text-decoration: none;">{{ post.title }}</a>
-      </h4>
-
-      <p style="font-size: 0.85rem; color: #666;">{{ post.date | date: "%B %d, %Y" }}</p>
-
-      {% if post.excerpt %}
-        <p style="font-size: 0.9rem;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-      {% endif %}
-
-      <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem; color: #007ACC;">Read more →</a>
-    </article>
-  {% endfor %}
-
+  <div>
+    <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="color: #007ACC;">{{ post.title }}</a></h3>
+    <p style="margin: 0.2rem 0; color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p style="margin: 0; font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem;">Read more →</a>
+  </div>
 </div>
+{% endfor %}
+
 
 <div style="margin-top: 1.5rem;">
   <a href="/notes" class="btn btn--primary">View All My Writings</a>
