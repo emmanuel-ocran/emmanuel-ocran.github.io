@@ -20,8 +20,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
      target="_blank" rel="noopener">View My Resume</a>
 
   <a href="/about" 
-     class="btn" 
-     style="margin-left: 15px; color: #6f777d; border: 1px solid #6f777d; padding: 0.4rem 1rem; border-radius: 5px; text-decoration: none;">Learn More About Me</a>
+     class="btn btn--outline">Learn More About Me</a>
 </div>
 
 &nbsp;
@@ -30,53 +29,27 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 
 <div class="service-grid">
 
-  <div class="service-card" style="background-color: #FFF6DD;">
-    <div class="service-icon">📈</div>
-    <h4 class="service-title">Strategy & Planning</h4>
-    <ul>
-      <li>Time for lead research, work</li>
-      <li>Traders & Stocks</li>
-      <li>Business Opportunities</li>
-    </ul>
-    <a class="service-button" href="#">Get Details →</a>
+  <div class="service-card" style="background-color: #E1F5FE;">
+    <h4 class="service-title">Data Analysis & Visualization</h4>
+    <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
   </div>
 
-  <div class="service-card" style="background-color: #D9F5EC;">
-    <div class="service-icon">💼</div>
-    <h4 class="service-title">Investment Policy</h4>
-    <ul>
-      <li>Time for lead research, work</li>
-      <li>Traders & Stocks</li>
-      <li>Business Opportunities</li>
-    </ul>
-    <a class="service-button" href="#">Get Details →</a>
+  <div class="service-card" style="background-color: #FCE4EC;">
+    <h4 class="service-title">Cloud Data Workflows</h4>
+    <p>Build automated pipelines with AWS (S3, Athena, Lambda) for scalable, cloud-native data reporting.</p>
   </div>
 
-  <div class="service-card" style="background-color: #FFE5EB;">
-    <div class="service-icon">🧾</div>
-    <h4 class="service-title">Tax Management</h4>
-    <ul>
-      <li>Time for lead research, work</li>
-      <li>Traders & Stocks</li>
-      <li>Business Opportunities</li>
-    </ul>
-    <a class="service-button" href="#">Get Details →</a>
+  <div class="service-card" style="background-color: #FFF9C4;">
+    <h4 class="service-title">Business-Focused Analytics</h4>
+    <p>Deliver end-to-end analytics solutions aligned with goals in finance, education, and development sectors.</p>
   </div>
 
-  <div class="service-card" style="background-color: #FFF3DE;">
-    <div class="service-icon">💰</div>
-    <h4 class="service-title">Financial Advice</h4>
-    <ul>
-      <li>Time for lead research, work</li>
-      <li>Traders & Stocks</li>
-      <li>Business Opportunities</li>
-    </ul>
-    <a class="service-button" href="#">Get Details →</a>
+  <div class="service-card" style="background-color: #E8F5E9;">
+    <h4 class="service-title">Dashboards & Reporting</h4>
+    <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
   </div>
 
 </div>
-
----
 
 ## Featured Projects
 
@@ -87,7 +60,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
       {% if project.image %}
         <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image" />
       {% endif %}
-      <h3><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></h3>
+      <h3><a href="{{ project.link }}" target="_blank" style="text-decoration: none; color: #333;">{{ project.title }}</a></h3>
       <p class="project-date"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
       <p>{{ project.description | truncatewords: 24 }}</p>
       <a class="project-link" href="{{ project.link }}" target="_blank">View project →</a>
@@ -99,8 +72,6 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   <a href="/projects" class="btn btn--primary">View All My Projects</a>
 </div>
 
----
-
 ## Recent Blog Posts
 
 {% for post in site.posts %}
@@ -110,8 +81,8 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   {% else %}
     <img src="/assets/images/default-thumbnail.png" alt="Post image" class="post-image" />
   {% endif %}
-  <div>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <div class="post-text">
+    <h3><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #333;">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
   </div>
@@ -121,8 +92,6 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 <div style="margin-top: 1.5rem;">
   <a href="/notes" class="btn btn--primary">View All My Writings</a>
 </div>
-
----
 
 <style>
   .entries-grid {
@@ -153,12 +122,18 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     margin-bottom: 0.5rem;
   }
 
+  .post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .project-date, .post-date {
     font-size: 0.85rem;
     color: #666;
   }
 
-  .project-link, .service-button {
+  .project-link {
     font-size: 0.85rem;
     color: #007ACC;
     text-decoration: none;
@@ -183,14 +158,14 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 
   .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
   }
 
   .service-card {
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #333;
     transition: transform 0.3s ease;
   }
@@ -200,20 +175,27 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   }
 
-  .service-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .service-title {
     margin: 0;
     font-size: 1.1rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 
-  .service-card ul {
-    padding-left: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  .btn--outline {
+    border: 1px solid #007ACC;
+    color: #007ACC;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .btn--primary {
+    background-color: #00BCD4;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
   }
 </style>
