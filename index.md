@@ -2,6 +2,7 @@
 layout: home
 title: ""
 author_profile: true
+classes: wide
 ---
 
 <!-- Hero Section -->
@@ -27,6 +28,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 ## What I Do
 
 <div class="service-grid">
+
   <div class="service-card" style="background-color: #E1F5FE;">
     <h4 class="service-title">Data Analysis & Visualization</h4>
     <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
@@ -46,6 +48,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     <h4 class="service-title">Dashboards & Reporting</h4>
     <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
   </div>
+
 </div>
 
 ## Featured Projects
@@ -91,8 +94,8 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 </div>
 
 <style>
-  body, p, h3 {
-    font-size: 16px;
+  body {
+    font-size: 18px;
   }
 
   .entries-grid {
@@ -121,8 +124,11 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     height: 110px;
     object-fit: cover;
     border-radius: 6px;
-    display: block;
-    margin: auto 0;
+  }
+
+  .post-image{
+    align-self: center;
+    vertical-align: center;
   }
 
   .post-text {
@@ -138,26 +144,21 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   }
 
   .project-link {
-    font-size: 0.85rem;
+    font-size: 18px;
     color: #007ACC;
     text-decoration: none;
     margin-top: 0.5rem;
     display: inline-block;
-    transition: opacity 0.3s ease;
-  }
-
-  .project-link:hover {
-    opacity: 0.8;
   }
 
   .blog-post {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
+    align-items: center;
   }
 
   @media screen and (max-width: 768px) {
@@ -179,6 +180,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     padding: 1.5rem;
     color: #333;
     transition: transform 0.3s ease;
+    font-size: 18px;
   }
 
   .service-card:hover {
@@ -188,7 +190,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 
   .service-title {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -199,6 +201,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     padding: 0.4rem 1rem;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 18px;
   }
 
   .btn--primary {
@@ -208,15 +211,17 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 18px;
   }
 
   .link-blue {
     color: #007ACC;
+    font-size: 18px;
     text-decoration: none;
     transition: opacity 0.3s ease;
   }
 
   .link-blue:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 </style>
