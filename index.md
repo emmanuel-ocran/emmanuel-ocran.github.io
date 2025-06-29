@@ -20,7 +20,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
      target="_blank" rel="noopener">View My Resume</a>
 
   <a href="/about" 
-     class="btn btn--outline">Learn More About Me</a>
+     class="btn btn--primary">Learn More About Me</a>
 </div>
 
 &nbsp;
@@ -60,8 +60,8 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
       {% if project.image %}
         <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image" />
       {% endif %}
-      <h3><a href="{{ project.link }}" target="_blank" class="link-blue">{{ project.title }}</a></h3>
-      <p class="project-date">{{ project.date | date: "%B %d, %Y" }}</p>
+      <h3><a href="{{ project.link }}" target="_blank" style="text-decoration: none; color: #333;">{{ project.title }}</a></h3>
+      <p class="project-date"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
       <p>{{ project.description | truncatewords: 24 }}</p>
       <a class="project-link" href="{{ project.link }}" target="_blank">View project →</a>
     </div>
@@ -82,7 +82,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     <img src="/assets/images/default-thumbnail.png" alt="Post image" class="post-image" />
   {% endif %}
   <div class="post-text">
-    <h3><a href="{{ post.url | relative_url }}" class="link-blue">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #333;">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
   </div>
@@ -115,10 +115,16 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   }
 
   .project-image, .post-image {
-    width: 180px;
-    height: 110px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
     border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-image{
+    align-self: center;
+    vertical-align: center;
   }
 
   .post-text {
@@ -128,9 +134,8 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   }
 
   .project-date, .post-date {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: #666;
-    margin-top: 0.25rem;
   }
 
   .project-link {
@@ -148,13 +153,11 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     margin-bottom: 2rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
-    align-items: center;
   }
 
   @media screen and (max-width: 768px) {
     .blog-post {
       flex-direction: column;
-      align-items: flex-start;
     }
   }
 
@@ -198,11 +201,6 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     padding: 0.5rem 1.2rem;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-  }
-
-  .link-blue {
-    color: #007ACC;
     text-decoration: none;
   }
 </style>
