@@ -20,7 +20,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
      target="_blank" rel="noopener">View My Resume</a>
 
   <a href="/about" 
-     class="btn btn--primary">Learn More About Me</a>
+     class="btn btn--outline">Learn More About Me</a>
 </div>
 
 &nbsp;
@@ -28,7 +28,6 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 ## What I Do
 
 <div class="service-grid">
-
   <div class="service-card" style="background-color: #E1F5FE;">
     <h4 class="service-title">Data Analysis & Visualization</h4>
     <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
@@ -48,7 +47,6 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     <h4 class="service-title">Dashboards & Reporting</h4>
     <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
   </div>
-
 </div>
 
 ## Featured Projects
@@ -60,8 +58,8 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
       {% if project.image %}
         <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image" />
       {% endif %}
-      <h3><a href="{{ project.link }}" target="_blank" style="text-decoration: none; color: #333;">{{ project.title }}</a></h3>
-      <p class="project-date"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
+      <h3><a href="{{ project.link }}" target="_blank" class="link-blue">{{ project.title }}</a></h3>
+      <p class="project-date">{{ project.date | date: "%B %d, %Y" }}</p>
       <p>{{ project.description | truncatewords: 24 }}</p>
       <a class="project-link" href="{{ project.link }}" target="_blank">View project →</a>
     </div>
@@ -82,7 +80,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     <img src="/assets/images/default-thumbnail.png" alt="Post image" class="post-image" />
   {% endif %}
   <div class="post-text">
-    <h3><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #333;">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | relative_url }}" class="link-blue">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
   </div>
@@ -94,11 +92,16 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 </div>
 
 <style>
+  body, p, h3 {
+    font-size: 16px;
+  }
+
   .entries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
+    justify-content: center;
   }
 
   .card-hover {
@@ -115,16 +118,12 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   }
 
   .project-image, .post-image {
-    width: 100%;
-    height: 180px;
+    width: 180px;
+    height: 110px;
     object-fit: cover;
     border-radius: 6px;
-    margin-bottom: 0.5rem;
-  }
-
-  .post-image{
-    align-self: center;
-    vertical-align: center;
+    display: block;
+    margin: auto 0;
   }
 
   .post-text {
@@ -134,8 +133,9 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   }
 
   .project-date, .post-date {
-    font-size: 0.65rem;
+    font-size: 12px;
     color: #666;
+    margin-top: 0.25rem;
   }
 
   .project-link {
@@ -144,11 +144,17 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     text-decoration: none;
     margin-top: 0.5rem;
     display: inline-block;
+    transition: opacity 0.3s ease;
+  }
+
+  .project-link:hover {
+    opacity: 0.8;
   }
 
   .blog-post {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #ddd;
@@ -158,6 +164,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
   @media screen and (max-width: 768px) {
     .blog-post {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -202,5 +209,15 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     border: none;
     border-radius: 5px;
     text-decoration: none;
+  }
+
+  .link-blue {
+    color: #007ACC;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .link-blue:hover {
+    opacity: 0.8;
   }
 </style>
