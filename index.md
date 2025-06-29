@@ -1,68 +1,41 @@
 ---
 layout: single
-title: "Emmanuel Ocran"
+title: ""
 permalink: /
-author_profile: true
 classes: wide
+author_profile: true
 ---
 
-> *I analyze data, build cloud solutions, and share what I learn.*
+I’m **Emmanuel Ocran**, a data analyst and cloud enthusiast based in Ghana. I work at the intersection of **data, cloud, and AI**, using tools like Python, SQL, AWS, and Power BI to solve practical problems across finance, NGOs, and tech.
 
-Welcome to my digital space. I'm **Emmanuel**, a data analyst with a background in finance, experience in cloud computing, and a growing focus on AI/ML. I use Python, SQL, Power BI, and AWS to build real-world solutions — from impact dashboards to automated pipelines.
+This site is a place where I share:
+- My [projects](/projects/) in data analysis, AI/ML, and web development
+- Occasional [writings](/posts/) on what I’m learning
+- My [background and resume](/about/) for those interested in working together
 
-This portfolio highlights my projects, learning journey, and insights from working at the intersection of **data, cloud, AI, and web**.
+I’m especially interested in how data and technology can be applied in:
+- Financial services and credit access  
+- NGO impact measurement  
+- Automation in small business decision-making
 
----
-
-## 🔍 What I Focus On
-
-- Making sense of messy data with clear visualizations and reports  
-- Building automated pipelines using **AWS**  
-- Writing about what I learn in **data science and cloud**  
-- Helping NGOs and small businesses with data-driven decisions  
-
----
-
-## 🛠️ Recent Projects
-
-- [📊 Credit Risk Model for Lending Decisions](/projects/finance-risk-model/)  
-- [📈 NGO Dashboard for Micro-Loan Tracking](/projects/ngo-impact/)  
-- [☁️ Real-Time Sales Pipeline on AWS](/projects/cloud-ai/)  
-- [🌐 Responsive SME Website with WordPress](/projects/sme-site/)  
-
-[View all projects →](/projects/)
+If you’re a recruiter, data professional, or collaborator, feel free to [contact me](/contact/) or connect on [LinkedIn](https://linkedin.com/in/emmanuel-ocran).
 
 ---
 
-## ✍️ Latest Writings
+### Latest Posts
 
 - [Why Feature Engineering Still Matters](/posts/feature-engineering-basics/)  
 - [Making NGO Impact Visible Through Data](/posts/making-ngos-impact-visible/)  
-- [What Generative AI Means for Analysts](/posts/role-of-generative-ai/)  
+- [What Generative AI Means for Analysts](/posts/role-of-generative-ai/)
 
-[Explore all writings →](/posts/)
-
----
-
-## 📄 About Me
-
-I'm a data professional based in Ghana, with a passion for building practical tools and sharing knowledge. My work blends data storytelling, technical fluency, and social impact — especially in **finance, nonprofits, IT, and retail.**
-
-I’ve completed:
-- AWS Re/Start (Cloud Practitioner certified)  
-- DataCamp Associate Data Scientist track  
-- AI Engineering training (Scrimba)
-
-[View my resume →](/assets/files/emmanuel_ocran_resume.pdf)
+[See all posts →](/posts/)
 
 ---
 
-## 📬 Contact
+### Selected Projects
 
-I'm open to opportunities, collaborations, and interesting conversations.
+- [Credit Risk Analysis in Python](/projects/finance-risk-model/)  
+- [Cloud-Based Reporting with AWS Lambda](/projects/cloud-ai/)  
+- [Dashboard for NGO Microloan Impact](/projects/ngo-impact/)
 
-- 📧 [Email](mailto:your-email@example.com)  
-- 💼 [LinkedIn](https://linkedin.com/in/emmanuel-ocran)  
-- 💻 [GitHub](https://github.com/emmanuel-ocran)
-
----
+[View all projects →](/projects/)
