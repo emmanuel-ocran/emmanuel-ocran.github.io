@@ -1,166 +1,68 @@
 ---
 layout: single
-title: ""
+title: "Emmanuel Ocran"
+permalink: /
 author_profile: true
 classes: wide
 ---
 
-<!-- Hero Section -->
-&nbsp;
+> *I analyze data, build cloud solutions, and share what I learn.*
 
-Hi, I'm **Ocran** — a data scientist and analyst with a foundation in finance and a focus on scalable, cloud-based analytics.
+Welcome to my digital space. I'm **Emmanuel**, a data analyst with a background in finance, experience in cloud computing, and a growing focus on AI/ML. I use Python, SQL, Power BI, and AWS to build real-world solutions — from impact dashboards to automated pipelines.
 
-I help organizations turn raw data into insights that drive smarter decisions, better performance, and measurable business value.
-
-With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplify reporting, uncover patterns, and power data-driven strategies across finance, education, and development sectors.
-
-<div style="margin-top: 1rem;">
-  <a href="https://drive.google.com/file/d/1DUUEciicVQzL8aN42of_AV_uRFBhouDO/view?usp=sharing"
-     class="btn btn--primary"
-     target="_blank" rel="noopener">View My Resume</a>
-
-  <a href="/about" 
-     class="btn" 
-     style="margin-left: 15px; color: #6f777d; border: 1px solid #6f777d; padding: 0.4rem 1rem; border-radius: 5px; text-decoration: none;">Learn More About Me</a>
-</div>
-
-&nbsp;
-
-## What I Do
-
-<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; margin-top: 1rem;">
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-chart-line"></i>
-    </div>
-    <h4 class="service-title">Data Analysis & Visualization</h4>
-    <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-cloud"></i>
-    </div>
-    <h4 class="service-title">Cloud Data Workflows</h4>
-    <p>Build automated pipelines with AWS (S3, Athena, Lambda) for scalable, cloud-native data reporting.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-briefcase"></i>
-    </div>
-    <h4 class="service-title">Business-Focused Analytics</h4>
-    <p>Deliver end-to-end analytics solutions aligned with goals in finance, education, and development sectors.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-tachometer-alt"></i>
-    </div>
-    <h4 class="service-title">Dashboards & Reporting</h4>
-    <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
-  </div>
-
-</div>
+This portfolio highlights my projects, learning journey, and insights from working at the intersection of **data, cloud, AI, and web**.
 
 ---
 
-## Featured Projects
+## 🔍 What I Focus On
 
-Real-world projects designed to demonstrate data skills, business understanding, and technical execution.
-
-<div class="entries-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-
-  {% assign latest_projects = site.projects | sort: 'date' | reverse %}
-  {% for project in latest_projects limit:2 %}
-    <div class="card-hover">
-      {% if project.image %}
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.5rem;" />
-      {% endif %}
-      <h3 style="margin-top: 0;">
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-      </h3>
-      <p style="font-size: 0.85rem; color: #666;"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
-      <p style="font-size: 0.9rem;">{{ project.description | truncatewords: 24 }}</p>
-      <a href="{{ project.link }}" target="_blank" style="font-size: 0.85rem; color: #007ACC;">View project →</a>
-    </div>
-  {% endfor %}
-
-</div>
-
-<div style="margin-top: 1.5rem;">
-  <a href="/projects" class="btn btn--primary">View All My Projects</a>
-</div>
+- Making sense of messy data with clear visualizations and reports  
+- Building automated pipelines using **AWS**  
+- Writing about what I learn in **data science and cloud**  
+- Helping NGOs and small businesses with data-driven decisions  
 
 ---
 
-## Recent Blog Posts
+## 🛠️ Recent Projects
 
-Short reads on data, analytics, and cloud — written for clarity, insight, and real-world relevance.
+- [📊 Credit Risk Model for Lending Decisions](/projects/finance-risk-model/)  
+- [📈 NGO Dashboard for Micro-Loan Tracking](/projects/ngo-impact/)  
+- [☁️ Real-Time Sales Pipeline on AWS](/projects/cloud-ai/)  
+- [🌐 Responsive SME Website with WordPress](/projects/sme-site/)  
 
-{% for post in site.posts %}
-<div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
-  {% if post.teaser %}
-    <img src="{{ post.teaser  | relative_url }}" alt="{{ post.title }}" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
-  {% else %}
-    <img src="/assets/images/default-thumbnail.png" alt="Post image" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
-  {% endif %}
-
-  <div>
-    <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="color: #007ACC;">{{ post.title }}</a></h3>
-    <p style="margin: 0.2rem 0; color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
-    <p style="margin: 0; font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-  </div>
-</div>
-{% endfor %}
-
-
-<div style="margin-top: 1.5rem;">
-  <a href="/notes" class="btn btn--primary">View All My Writings</a>
-</div>
+[View all projects →](/projects/)
 
 ---
 
-<style>
-  .card-hover {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #fff;
-    transition: all 0.3s ease;
-  }
+## ✍️ Latest Writings
 
-  .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
+- [Why Feature Engineering Still Matters](/posts/feature-engineering-basics/)  
+- [Making NGO Impact Visible Through Data](/posts/making-ngos-impact-visible/)  
+- [What Generative AI Means for Analysts](/posts/role-of-generative-ai/)  
 
-  .service-card {
-    flex: 1 1 calc(48% - 1rem);
-    min-width: 280px;
-    border: 1px solid #ddd;
-    padding: 1.25rem;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-  }
+[Explore all writings →](/posts/)
 
-  .service-card:hover {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
-  }
+---
 
-  .service-title {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-  }
+## 📄 About Me
 
-  @media screen and (max-width: 768px) {
-    .service-card {
-      flex: 1 1 100%;
-    }
-  }
-</style>
+I'm a data professional based in Ghana, with a passion for building practical tools and sharing knowledge. My work blends data storytelling, technical fluency, and social impact — especially in **finance, nonprofits, IT, and retail.**
+
+I’ve completed:
+- AWS Re/Start (Cloud Practitioner certified)  
+- DataCamp Associate Data Scientist track  
+- AI Engineering training (Scrimba)
+
+[View my resume →](/assets/files/emmanuel_ocran_resume.pdf)
+
+---
+
+## 📬 Contact
+
+I'm open to opportunities, collaborations, and interesting conversations.
+
+- 📧 [Email](mailto:your-email@example.com)  
+- 💼 [LinkedIn](https://linkedin.com/in/emmanuel-ocran)  
+- 💻 [GitHub](https://github.com/emmanuel-ocran)
+
+---
