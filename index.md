@@ -1,166 +1,86 @@
 ---
-layout: single
-title: ""
-author_profile: true
-classes: wide
----
+layout: home
+title: "Emmanuel Ocran | Data Analyst | Cloud & AI Enthusiast"
+permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.2"
+  overlay_image: /assets/images/dn-banner.jpg
+  cta_label: "View Projects"
+  cta_url: "/projects/"
+  caption: "Insight. Impact. Innovation."
 
-<!-- Hero Section -->
-&nbsp;
+excerpt: "Helping organizations in finance, NGOs, and tech uncover insight through data, cloud, and storytelling."
 
-Hi, I'm **Ocran** — a data scientist and analyst with a foundation in finance and a focus on scalable, cloud-based analytics.
+feature_row:
+  - image_path: /assets/images/coffee-dashboard.png
+    alt: "Finance Data Project"
+    title: "Finance Case Study"
+    excerpt: "Built a credit risk analysis model using Python and Power BI to support lending decisions."
+    url: "/projects/finance-risk-model/"
+    btn_label: "Explore"
+    btn_class: "btn--primary"
 
-I help organizations turn raw data into insights that drive smarter decisions, better performance, and measurable business value.
+  - image_path: /assets/images/netflix-movie-analysis.png
+    alt: "NGO Data Project"
+    title: "NGO Impact Dashboard"
+    excerpt: "Developed a dashboard to track micro-loan performance for women-led businesses using Excel and Power BI."
+    url: "/projects/ngo-impact/"
+    btn_label: "View Dashboard"
+    btn_class: "btn--primary"
 
-With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplify reporting, uncover patterns, and power data-driven strategies across finance, education, and development sectors.
-
-<div style="margin-top: 1rem;">
-  <a href="https://drive.google.com/file/d/1DUUEciicVQzL8aN42of_AV_uRFBhouDO/view?usp=sharing"
-     class="btn btn--primary"
-     target="_blank" rel="noopener">View My Resume</a>
-
-  <a href="/about" 
-     class="btn" 
-     style="margin-left: 15px; color: #6f777d; border: 1px solid #6f777d; padding: 0.4rem 1rem; border-radius: 5px; text-decoration: none;">Learn More About Me</a>
-</div>
-
-&nbsp;
-
-## What I Do
-
-<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; margin-top: 1rem;">
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-chart-line"></i>
-    </div>
-    <h4 class="service-title">Data Analysis & Visualization</h4>
-    <p>Analyze, clean, and visualize data using Python, SQL, Excel, and Power BI to uncover business insights.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-cloud"></i>
-    </div>
-    <h4 class="service-title">Cloud Data Workflows</h4>
-    <p>Build automated pipelines with AWS (S3, Athena, Lambda) for scalable, cloud-native data reporting.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-briefcase"></i>
-    </div>
-    <h4 class="service-title">Business-Focused Analytics</h4>
-    <p>Deliver end-to-end analytics solutions aligned with goals in finance, education, and development sectors.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon-wrapper">
-      <i class="fas fa-tachometer-alt"></i>
-    </div>
-    <h4 class="service-title">Dashboards & Reporting</h4>
-    <p>Create interactive dashboards that track performance, monitor KPIs, and support decision-making.</p>
-  </div>
-
-</div>
+  - image_path: /assets/images/coffee-dashboard.png
+    alt: "Cloud & AI"
+    title: "Cloud & AI Workflow"
+    excerpt: "Automated a cloud-based data pipeline using AWS Lambda, S3, and Python for real-time reporting."
+    url: "/projects/cloud-ai/"
+    btn_label: "See Workflow"
+    btn_class: "btn--primary"
 
 ---
 
-## Featured Projects
-
-Real-world projects designed to demonstrate data skills, business understanding, and technical execution.
-
-<div class="entries-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-
-  {% assign latest_projects = site.projects | sort: 'date' | reverse %}
-  {% for project in latest_projects limit:2 %}
-    <div class="card-hover">
-      {% if project.image %}
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 0.5rem;" />
-      {% endif %}
-      <h3 style="margin-top: 0;">
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-      </h3>
-      <p style="font-size: 0.85rem; color: #666;"><strong>{{ project.date | date: "%B %d, %Y" }}</strong></p>
-      <p style="font-size: 0.9rem;">{{ project.description | truncatewords: 24 }}</p>
-      <a href="{{ project.link }}" target="_blank" style="font-size: 0.85rem; color: #007ACC;">View project →</a>
-    </div>
-  {% endfor %}
-
-</div>
-
-<div style="margin-top: 1.5rem;">
-  <a href="/projects" class="btn btn--primary">View All My Projects</a>
-</div>
+<!-- ✨ Quick Summary Box -->
+## 🔍 What I Do in 10 Seconds
+- 📊 Analyze business data to drive decisions  
+- ☁️ Automate workflows with AWS Cloud tools  
+- 🤖 Apply machine learning to solve real problems  
+- 🖥️ Build dashboards and data-driven websites
 
 ---
 
-## Recent Blog Posts
+## 🚀 About Me
 
-Short reads on data, analytics, and cloud — written for clarity, insight, and real-world relevance.
+I'm Emmanuel, a data analyst with a finance background, certified AWS Cloud Practitioner, and growing experience in AI/ML, analytics, and web development. I enjoy uncovering insights from data and building digital solutions that solve real-world problems — especially in finance, nonprofits, and retail.
 
-{% for post in site.posts %}
-<div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
-  {% if post.teaser %}
-    <img src="{{ post.teaser  | relative_url }}" alt="{{ post.title }}" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
-  {% else %}
-    <img src="/assets/images/default-thumbnail.png" alt="Post image" style="width: 180px; height: 110px; object-fit: cover; border-radius: 6px;" />
-  {% endif %}
-
-  <div>
-    <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="color: #007ACC;">{{ post.title }}</a></h3>
-    <p style="margin: 0.2rem 0; color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
-    <p style="margin: 0; font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-  </div>
-</div>
-{% endfor %}
-
-
-<div style="margin-top: 1.5rem;">
-  <a href="/notes" class="btn btn--primary">View All My Writings</a>
-</div>
+I work at the intersection of data, cloud, and code.
 
 ---
 
-<style>
-  .card-hover {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #fff;
-    transition: all 0.3s ease;
-  }
+## 📂 Featured Projects
 
-  .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
+{% include feature_row %}
 
-  .service-card {
-    flex: 1 1 calc(48% - 1rem);
-    min-width: 280px;
-    border: 1px solid #ddd;
-    padding: 1.25rem;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-  }
+---
 
-  .service-card:hover {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
-  }
+## 📝 Latest Insights
 
-  .service-title {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-  }
+{% include blog_grid.html posts=3 %}
 
-  @media screen and (max-width: 768px) {
-    .service-card {
-      flex: 1 1 100%;
-    }
-  }
-</style>
+---
+
+## 💼 Resume & Certifications
+
+- [View My Resume](/assets/files/emmanuel_ocran_resume.pdf)
+- AWS Certified Cloud Practitioner  
+- Associate Data Scientist in Python (DataCamp)
+
+---
+
+## 📬 Let’s Connect
+
+📧 [Email Me](mailto:your-email@example.com)  
+🔗 [LinkedIn](https://linkedin.com/in/emmanuel-ocran)  
+💻 [GitHub](https://github.com/emmanuel-ocran)
+
+---
+
