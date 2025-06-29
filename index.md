@@ -16,7 +16,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 
 <div style="margin-top: 1rem;">
   <a href="https://drive.google.com/file/d/1DUUEciicVQzL8aN42of_AV_uRFBhouDO/view?usp=sharing"
-     class="btn btn--primary"
+     class="btn btn--main"
      target="_blank" rel="noopener">View My Resume</a>
 
   <a href="/about" 
@@ -69,7 +69,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
 </div>
 
 <div style="margin-top: 1.5rem;">
-  <a href="/projects" class="btn btn--primary">View All My Projects</a>
+  <a href="/projects" class="btn btn--main">View All My Projects</a>
 </div>
 
 ## Recent Blog Posts
@@ -120,6 +120,10 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 0.5rem;
+  }
+
+  .post-image{
+    align-items: center;
   }
 
   .post-text {
@@ -190,7 +194,7 @@ With expertise in Python, SQL, AWS, and BI tools, I build solutions that simplif
     text-decoration: none;
   }
 
-  .btn--primary {
+  .btn--main {
     background-color: #00BCD4;
     color: white;
     padding: 0.5rem 1.2rem;
