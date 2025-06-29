@@ -64,7 +64,7 @@ I work at the intersection of data, cloud, and code.
 
 ## 📝 Latest Insights
 
-<!-- {% include blog_grid.html posts=3 %} -->
+{% include blog_grid.html posts=3 %}
 
 ---
 
