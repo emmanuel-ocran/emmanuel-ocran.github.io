@@ -1,8 +1,7 @@
 ---
-layout: single
+layout: home
 title: ""
 author_profile: true
-classes: wide
 ---
 
 <!-- Hero Section -->
